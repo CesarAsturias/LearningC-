@@ -1,20 +1,24 @@
 #include <iostream>
 
+using std::cout;
+using std::endl;
+
+// Class definition
+class Marksbook
+{
+    public:
+        void showMessage()
+        {
+            cout << "Welcome to the Marksbook!" << endl;
+        }
+};
+
+
 int main()
 {
-    // Variable declaration
-    int number1, number2, sum;
-   
+    Marksbook myMarksbook; // Create Marksbook object
+    myMarksbook.showMessage();
 
-    std::cout << "Introduce the first number: ";
-    std::cin >> number1;
-
-    std::cout << "Introduce the second number: ";
-    std::cin >> number2;
-
-    sum = number1 + number2;
-
-    std::cout << "The sum is " << sum << std::endl; // Show the sum, end of line
     return 0;
 
 }
