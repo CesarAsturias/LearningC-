@@ -2,15 +2,21 @@
 #include <string>
 
 using std::string;
-using std::getline;
+
 using std::cout;
 using std::endl;
-using std::cin;
+
 
 // Class definition
 class Marksbook
 {
     public:
+        // Constructor
+        Marksbook( string name )
+        {
+            setCourseName( name );
+        }
+
         // This function sets the course name
         void setCourseName( string name )
         {
@@ -38,19 +44,15 @@ class Marksbook
 
 int main()
 {
-    string nameofCourse; //String array
-    Marksbook myMarksbook; // Create Marksbook object
-    // Shows the initial course name
-    cout << "The initial course name is: " << myMarksbook.getCourseName() << endl;
-    // Get another course name
-    cout << "Write the course name:" << endl;
-    getline( cin, nameofCourse ); // Read the name of the course, getline read the characters of 
-                                  // the input standar object cin (keyboard), until it finds a new line
-    myMarksbook.setCourseName( nameofCourse );
-
+    //Create two instances of Marksbook class
+    
+    Marksbook myMarksbook1( "Learning C++"); // Create Marksbook object
+    Marksbook myMarksbook2( "Understanding C++");
+    // Print the attribute:
+    cout << "We are learning: " << myMarksbook1.getCourseName() << endl;
+    cout << "\nWe are:" << myMarksbook2.getCourseName() << endl;
+  
     cout << endl; // Print blank line
-    myMarksbook.showMessage();
-
     return 0;
 
 }
