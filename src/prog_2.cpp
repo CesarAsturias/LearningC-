@@ -11,7 +11,8 @@ using std::endl;
 class Marksbook
 {
     public:
-        // Constructor
+        // Constructor. It has the same name as the class, and 
+        // the necessary parameters.
         Marksbook( string name )
         {
             setCourseName( name );
