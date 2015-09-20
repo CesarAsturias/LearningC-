@@ -1,5 +1,2 @@
-cmake_minimum_required( VERSION 2.6 )
-project (control)
-include_directories(../include)
 set (Example_source control.cpp )
 add_executable(control ${Example_source})
