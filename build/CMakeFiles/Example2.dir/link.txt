@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/Example2.dir/prog_2.cpp.o  -o Example2 -rdynamic 
